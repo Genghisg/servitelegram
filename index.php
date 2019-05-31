@@ -12,7 +12,7 @@ $update = json_decode($update, TRUE);
 
 //$text = $updateArray["result"][0]["message"]["text"];
 //print_r($text);
-$chatId = $updateArray["result"][0]["chat"]["id"];
+$chatId = $updateArray["result"][0]["message"]["chat"]["id"];
 print_r($chatId);
 
 /*
