@@ -9,14 +9,12 @@ $update = json_decode($update, TRUE);
 $chatId = $update["message"]["chat"]["id"];
 $chatType = $update["message"]["chat"]["type"];
 
-$mensaje = $update["message"]["text"];
+$message = $update["message"]["text"];
 
-switch ($mensaje) {
+switch ($message) {
     case '/ayuda':
         $response = "Le ayudaré en lo que pueda";
         sendMessage($chatId, $response);
-        break;
-    default:
         break;
 }
 
