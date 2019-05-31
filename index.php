@@ -8,7 +8,7 @@ echo $website;
 $update = file_get_contents("php://input");
 $update = json_decode($update, TRUE);
 
-vardump($update);
+echo $update;
 /*$chatId = $update["message"]["chat"]["id"];
 $chatType = $update["message"]["chat"]["type"];
 
